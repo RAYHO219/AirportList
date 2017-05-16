@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		042BE4AF1EC8C8900089E1F2 /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE4AE1EC8C8900089E1F2 /* AirportDetailViewController.swift */; };
+		0459EF371ECB3D760006B44D /* airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0459EF361ECB3D760006B44D /* airports.plist */; };
 		047C6E941EC7703B000A33D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C6E931EC7703B000A33D0 /* AppDelegate.swift */; };
 		047C6E991EC7703B000A33D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C6E971EC7703B000A33D0 /* Main.storyboard */; };
 		047C6E9C1EC7703B000A33D0 /* AirportList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047C6E9A1EC7703B000A33D0 /* AirportList.xcdatamodeld */; };
 		047C6E9E1EC7703B000A33D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C6E9D1EC7703B000A33D0 /* Assets.xcassets */; };
 		047C6EA11EC7703B000A33D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C6E9F1EC7703B000A33D0 /* LaunchScreen.storyboard */; };
 		047C6EA91EC77225000A33D0 /* AirportListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C6EA81EC77225000A33D0 /* AirportListTableViewController.swift */; };
-		047C6EAB1EC7732F000A33D0 /* airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047C6EAA1EC7732F000A33D0 /* airports.plist */; };
 		047C6ED21EC89933000A33D0 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C6ED11EC89933000A33D0 /* AirportTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		042BE4AE1EC8C8900089E1F2 /* AirportDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
+		0459EF361ECB3D760006B44D /* airports.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = airports.plist; sourceTree = "<group>"; };
 		047C6E901EC7703B000A33D0 /* AirportList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C6E931EC7703B000A33D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047C6E981EC7703B000A33D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		047C6EA01EC7703B000A33D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047C6EA21EC7703B000A33D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047C6EA81EC77225000A33D0 /* AirportListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportListTableViewController.swift; sourceTree = "<group>"; };
-		047C6EAA1EC7732F000A33D0 /* airports.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = airports.plist; path = "../../../../Downloads/Airports Data/airports.plist"; sourceTree = "<group>"; };
 		047C6ED11EC89933000A33D0 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 				047C6E931EC7703B000A33D0 /* AppDelegate.swift */,
 				047C6E971EC7703B000A33D0 /* Main.storyboard */,
 				047C6E9D1EC7703B000A33D0 /* Assets.xcassets */,
-				047C6EAA1EC7732F000A33D0 /* airports.plist */,
 				047C6E9F1EC7703B000A33D0 /* LaunchScreen.storyboard */,
+				0459EF361ECB3D760006B44D /* airports.plist */,
 				047C6EA21EC7703B000A33D0 /* Info.plist */,
 				047C6E9A1EC7703B000A33D0 /* AirportList.xcdatamodeld */,
 				047C6EA81EC77225000A33D0 /* AirportListTableViewController.swift */,
@@ -135,7 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047C6EAB1EC7732F000A33D0 /* airports.plist in Resources */,
+				0459EF371ECB3D760006B44D /* airports.plist in Resources */,
 				047C6EA11EC7703B000A33D0 /* LaunchScreen.storyboard in Resources */,
 				047C6E9E1EC7703B000A33D0 /* Assets.xcassets in Resources */,
 				047C6E991EC7703B000A33D0 /* Main.storyboard in Resources */,
