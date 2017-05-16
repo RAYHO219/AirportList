@@ -1,26 +1,170 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iam-MS-3LL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Airports-->
+        <scene sceneID="xBr-we-zjy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="QiS-Zb-hhQ" customClass="AirportListTableViewController" customModule="AirportList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" id="EdD-Mf-aq0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="94" id="Hxg-gE-10w" customClass="AirportTableViewCell" customModule="AirportList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hxg-gE-10w" id="xUA-F9-sI0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fra-Uy-Xap">
+                                            <rect key="frame" x="14" y="10" width="73.5" height="67"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQy-z0-QFp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="73.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rND-9w-a1t">
+                                                    <rect key="frame" x="0.0" y="25.5" width="73.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShortName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk3-6i-W4B">
+                                                    <rect key="frame" x="0.0" y="50" width="73.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFr-4h-joO">
+                                            <rect key="frame" x="336.5" y="38" width="30.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gFr-4h-joO" firstAttribute="top" secondItem="xUA-F9-sI0" secondAttribute="topMargin" constant="30" id="8mT-0L-LdJ"/>
+                                        <constraint firstItem="gFr-4h-joO" firstAttribute="trailing" secondItem="xUA-F9-sI0" secondAttribute="trailingMargin" id="f9A-LI-pcg"/>
+                                        <constraint firstItem="Fra-Uy-Xap" firstAttribute="leading" secondItem="xUA-F9-sI0" secondAttribute="leadingMargin" constant="6" id="faV-Jg-An3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gFr-4h-joO" secondAttribute="bottom" constant="30" id="gI1-YM-HaE"/>
+                                        <constraint firstItem="Fra-Uy-Xap" firstAttribute="top" secondItem="xUA-F9-sI0" secondAttribute="topMargin" constant="2" id="xCa-iu-zBC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Airport" destination="rND-9w-a1t" id="4J6-O4-32C"/>
+                                    <outlet property="City" destination="gFr-4h-joO" id="UiX-WZ-dYA"/>
+                                    <outlet property="Country" destination="iQy-z0-QFp" id="rAI-91-s1G"/>
+                                    <outlet property="ShortName" destination="zk3-6i-W4B" id="4i6-pa-kSS"/>
+                                    <segue destination="Tza-7w-Sba" kind="show" identifier="showAirportDetail" id="31X-5K-Vjq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="QiS-Zb-hhQ" id="wy2-gm-yh9"/>
+                            <outlet property="delegate" destination="QiS-Zb-hhQ" id="F00-Sx-YGf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Airports" id="Rur-ec-DrO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yER-r0-2hO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1061.5999999999999" y="150.67466266866569"/>
+        </scene>
+        <!--Airport Detail View Controller-->
+        <scene sceneID="me5-wp-Il5">
+            <objects>
+                <viewController id="Tza-7w-Sba" customClass="AirportDetailViewController" customModule="AirportList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUq-gP-Fzv"/>
+                        <viewControllerLayoutGuide type="bottom" id="spr-2t-xdY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dGY-xb-ceZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="83n-wT-fKn">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="biB-t8-PFB">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="113.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airport" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPE-ed-L7x">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzR-tb-00D">
+                                                <rect key="frame" x="0.0" y="60.5" width="64" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e5-ug-ikm">
+                                                <rect key="frame" x="0.0" y="92" width="30.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJl-yN-8v7">
+                                        <rect key="frame" x="0.0" y="113.5" width="375" height="469.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="83n-wT-fKn" firstAttribute="leading" secondItem="dGY-xb-ceZ" secondAttribute="leading" id="9dn-NA-pLa"/>
+                            <constraint firstItem="spr-2t-xdY" firstAttribute="top" secondItem="83n-wT-fKn" secondAttribute="bottom" id="EBI-fh-s9Q"/>
+                            <constraint firstAttribute="trailing" secondItem="83n-wT-fKn" secondAttribute="trailing" id="fjL-Tw-P2F"/>
+                            <constraint firstItem="83n-wT-fKn" firstAttribute="top" secondItem="NUq-gP-Fzv" secondAttribute="bottom" constant="20" id="knN-MW-D3c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AirportLabel" destination="HPE-ed-L7x" id="8GB-Ft-gTs"/>
+                        <outlet property="CityLabel" destination="7e5-ug-ikm" id="J8i-Ui-3Zx"/>
+                        <outlet property="CountryLabel" destination="mzR-tb-00D" id="J4S-VT-epH"/>
+                        <outlet property="airportImageView" destination="nJl-yN-8v7" id="giO-UQ-gaW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Foh-kJ-uHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982" y="152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ynR-0j-1Em">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iam-MS-3LL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K9g-Ie-gPz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QiS-Zb-hhQ" kind="relationship" relationship="rootViewController" id="AZA-32-DMP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq2-ds-SO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="152.47376311844079"/>
         </scene>
     </scenes>
 </document>
